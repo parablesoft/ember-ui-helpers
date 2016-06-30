@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const {Mixin,get,observer} = Ember;
+const {Mixin,get,observer,} = Ember;
 export default Mixin.create({
 	didInsertElement(){
 		let doNotFocus = get(this,"doNotFocus");
