@@ -1,7 +1,7 @@
 {
   "name": "ember-ui-helpers",
   "version": "0.0.1",
-  "description": "UI components that we use in every project",
+  "description": "(WIP) UI components that we use in every project",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "git@bitbucket.org:parablesoft/ember-ui-helpers.git",
   "engines": {
     "node": ">= 0.10.0"
   },
