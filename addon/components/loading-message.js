@@ -8,5 +8,5 @@ const {Component} = Ember;
 export default Component.extend({
 	layout: layout,
 	message: "Loading ...",
-	classNames: ["ember-ui-helpers-loading-message"],
+	classNames: ["ember-ui-helpers-loading-message fade-in"],
 });
