@@ -6,3 +6,11 @@ div.ember-ui-helpers-blank-slate{
 	border-top: 1px solid #ff6900;
 	border-bottom: 1px solid #ff6900;
 }
+
+div.ember-ui-helpers-blank-slate div.ember-ui-helpers-blank-slate-text{
+	font-size:2em;
+	margin-bottom:16px;
+}
+
+div.ember-ui-helpers-blank-slate div.ember-ui-helpers-blank-slate-button{
+}
