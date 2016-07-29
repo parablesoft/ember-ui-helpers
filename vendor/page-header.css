@@ -1,0 +1,11 @@
+.ember-ui-helpers-page-header{
+	margin-top:-35px ;
+	background-color: #ffffee;
+	padding:10px;
+	border-bottom:1px #ddd solid;
+	margin-bottom:20px;
+}
+
+div.ember-ui-helpers-page-header div.ember-ui-helpers-main-title{
+	padding-top:10px;
+}

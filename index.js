@@ -7,5 +7,6 @@ module.exports = {
 		app.import("bower_components/font-awesome/css/font-awesome.css");
     app.import("vendor/fade-in.css");
     app.import("vendor/blank-slate.css");
+    app.import("vendor/page-header.css");
 	}
 };
