@@ -1,0 +1,8 @@
+div.ember-ui-helpers-blank-slate{
+	padding:20px;
+	font-weight:bold;
+	background-color: #ffffcc;
+	color: #000;
+	border-top: 1px solid #ff6900;
+	border-bottom: 1px solid #ff6900;
+}
