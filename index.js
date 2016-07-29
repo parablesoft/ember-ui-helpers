@@ -10,6 +10,7 @@ module.exports = {
     app.import("vendor/fade-in.css");
     app.import("vendor/blank-slate.css");
     app.import("vendor/page-header.css");
+    app.import("vendor/generic.css");
     app.import("vendor/assets/sounds/errorNotification.mp3");
 	}
 };
