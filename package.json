@@ -1,6 +1,6 @@
 {
   "name": "ember-ui-helpers",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "(WIP) UI components that we use in every project",
   "directories": {
     "doc": "doc",
