@@ -30,6 +30,17 @@
 					 {{action "showSuccessMessage"}}>
 				Success
 			</button>
+			<hr>
+			<h2>Address Block</h2>
+			{{address-block item=person}}
+			{{address-block item=business}}
+			{{address-block item=client nameField="fullName" addressField="street"
+			addressField2="street2"
+			cityField="municipality"
+			stateField="stateOrProvince"
+			zipField="postal"
+			}}
+
 		</div>
 	</div>
 </div>

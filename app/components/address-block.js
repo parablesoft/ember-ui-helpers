@@ -1,0 +1,1 @@
+export { default } from 'ember-ui-helpers/components/address-block';

@@ -1,0 +1,12 @@
+{{#if item}}
+	<address>
+		{{#if (get item nameField)}}
+			{{get item nameField}}<br/>
+		{{/if}}
+		{{get item addressField}}<br/>
+		{{#if (get item address2Field)}}
+			{{get item address2Field}}<br/>
+		{{/if}}
+		{{get item cityField}}, {{get item stateField}} {{get item zipField}}
+	</address>
+{{/if}}
