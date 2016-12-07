@@ -1,6 +1,6 @@
 {
   "name": "ember-ui-helpers",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "(WIP) UI components that we use in every project",
   "directories": {
     "doc": "doc",
@@ -36,7 +36,6 @@
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-font-awesome": "2.1.1",
     "ember-get-helper": "1.1.0",
     "ember-inflector": "1.9.5",
     "ember-try": "~0.0.8"
@@ -45,6 +44,7 @@
     "ember-addon"
   ],
   "dependencies": {
+    "ember-font-awesome": "2.1.1",
     "ember-cli-babel": "^5.1.5",
     "ember-cli-htmlbars": "^1.0.1"
   },
