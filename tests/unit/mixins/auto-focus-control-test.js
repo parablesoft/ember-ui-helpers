@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import AutoFocusControlMixin from '../../../mixins/auto-focus-control';
+import AutoFocusControlMixin from 'ember-ui-helpers/mixins/auto-focus-control';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | auto focus control');
