@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import NotifyableMixin from '../../../mixins/notifyable';
+import NotifyableMixin from 'ember-ui-helpers/mixins/notifyable';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | notifyable');

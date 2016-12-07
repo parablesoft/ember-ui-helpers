@@ -6,15 +6,15 @@ moduleForComponent('textfield-auto-focus', 'Integration | Component | textfield 
 });
 
 test('it renders', function(assert) {
-  
+
   // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });" + EOL + EOL +
+  // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.render(hbs`{{textfield-auto-focus}}`);
 
   assert.equal(this.$().text().trim(), '');
 
-  // Template block usage:" + EOL +
+  // Template block usage:
   this.render(hbs`
     {{#textfield-auto-focus}}
       template block text

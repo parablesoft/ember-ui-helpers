@@ -1,10 +1,10 @@
 {{#if hasBlock}}
-	{{yield}}
+  {{yield}}
 {{else}}
-	<div class="ember-ui-helpers-blank-slate-text">
-		You haven't added any {{resource}} to the system yet.
-	</div>
-	<div class="ember-ui-helpers-blank-slate-button">
-		{{link-to addText addRoute class=buttonClass }}
-	</div>
+  <div class="ember-ui-helpers-blank-slate-text">
+    You haven't added any {{resource}} to the system yet.
+  </div>
+  <div class="ember-ui-helpers-blank-slate-button">
+    {{link-to addText addRoute class=buttonClass }}
+  </div>
 {{/if}}

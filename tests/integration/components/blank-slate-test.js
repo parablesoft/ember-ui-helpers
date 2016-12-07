@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('wrapped-input', 'Integration | Component | wrapped input', {
+moduleForComponent('blank-slate', 'Integration | Component | blank slate', {
   integration: true
 });
 
@@ -10,15 +10,15 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{wrapped-input}}`);
+  this.render(hbs`{{blank-slate}}`);
 
   assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
-    {{#wrapped-input}}
+    {{#blank-slate}}
       template block text
-    {{/wrapped-input}}
+    {{/blank-slate}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
