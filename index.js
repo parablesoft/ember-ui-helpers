@@ -3,8 +3,9 @@
 
 module.exports = {
   name: 'ember-ui-helpers',
-  included: function(app){
-    // app.import("bower_components/font-awesome/css/font-awesome.css");
+  included: function(app, parentAddon) {
+    this._super.included.apply(this, arguments);
+    var target = (parentAddon || app);
     app.import("vendor/assets/sweetalert/dist/sweetalert.css");
     app.import("vendor/assets/sweetalert/dist/sweetalert-dev.js");
     app.import("vendor/assets/stylesheets/fade-in.css");
