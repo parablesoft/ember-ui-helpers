@@ -1,16 +1,10 @@
 /*jshint node:true*/
 module.exports = {
-  description: ''
-
-  // locals: function(options) {
-  //   // Return custom template variables here.
-  //   return {
-  //     foo: options.entity.options.foo
-  //   };
-  // }
-
+  description: '',
+  normalizeEntityName: function() {},
   afterInstall: function(options) {
-    this.addPackageToProject('ember-font-awesome', '2.2.0');
-    return this.addPackageToProject('ember-bootstrap', '0.11.1');
+    this.addBowerPackageToProject("sweetalert","^1.1.3");
+    this.addAddonToProject('ember-font-awesome', '2.2.0');
+    return this.addAddonToProject('ember-bootstrap', '0.11.1');
   }
 };

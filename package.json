@@ -1,6 +1,6 @@
 {
   "name": "ember-ui-helpers",
-  "version": "0.0.26",
+  "version": "0.0.32",
   "description": "(WIP) UI components that we use in every project",
   "directories": {
     "doc": "doc",
@@ -18,7 +18,7 @@
   "author": "Vic Amuso <vic@parablesoft.com>",
   "license": "MIT",
   "devDependencies": {
-    "ember-bootstrap": "0.11.1",
+    "ember-bootstrap": "0.11.3",
     "ember-font-awesome": "2.2.0",
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",
