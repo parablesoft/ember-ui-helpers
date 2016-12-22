@@ -6,16 +6,16 @@ module.exports = {
   included: function(app, parentAddon) {
     this._super.included.apply(this, arguments);
     var target = (parentAddon || app);
-    if(target.parentAddon){
-      target = parentAddon;
+  // see: https://github.com/ember-cli/ember-cli/issues/3718
+    if (typeof app.import !== 'function' && app.app) {
+      app = app.app;
     }
-
-    target.import("bower_components/sweetalert/dist/sweetalert.css");
-    target.import("bower_components/sweetalert/dist/sweetalert-dev.js");
-    target.import("vendor/assets/stylesheets/fade-in.css");
-    target.import("vendor/assets/stylesheets/blank-slate.css");
-    target.import("vendor/assets/stylesheets/page-header.css");
-    target.import("vendor/assets/stylesheets/generic.css");
-    target.import("vendor/assets/sounds/errorNotification.mp3");
+    app.import("bower_components/sweetalert/dist/sweetalert.css");
+    app.import("bower_components/sweetalert/dist/sweetalert-dev.js");
+    app.import("vendor/assets/stylesheets/fade-in.css");
+    app.import("vendor/assets/stylesheets/blank-slate.css");
+    app.import("vendor/assets/stylesheets/page-header.css");
+    app.import("vendor/assets/stylesheets/generic.css");
+    app.import("vendor/assets/sounds/errorNotification.mp3");
   }
 };
