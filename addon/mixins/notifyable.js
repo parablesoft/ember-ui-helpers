@@ -25,7 +25,7 @@ export default Mixin.create({
 	this.transitionToRoute(routeToGo);
       }
     });
-  }
+  },
   //Should deprecate all of these soon
   infoMessage(message,{timer,playSound} = {}){
     this.info(message,{timer: timer, playSound: playSound});
