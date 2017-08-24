@@ -14,8 +14,8 @@ export default Mixin.create({
   success(message,{timer,playSound} = {}){
     get(this,"notifier").success(message,{timer: timer, playSound: playSound});
   },
-  confirm(message){
-    return get(this,"notifier").confirm(message).then((isConfirmed)=>{
+  confirm(message,options={}){
+    return get(this,"notifier").confirm(message,options).then((isConfirmed)=>{
       return isConfirmed;
     });
   },
@@ -29,9 +29,6 @@ export default Mixin.create({
   //Should deprecate all of these soon
   infoMessage(message,{timer,playSound} = {}){
     this.info(message,{timer: timer, playSound: playSound});
-  },
-  errorMessage(message,{timer,playSound} = {}){
-    this.error(message,{timer: timer, playSound: playSound});
   },
   successMessage(message,{timer,playSound} = {}){
     this.success(message,{timer: timer, playSound: playSound});

@@ -3,6 +3,9 @@
 
 module.exports = {
   name: 'ember-ui-helpers',
+  isDevelopingAddon: function() {
+    return true;
+  },
   included: function(app, parentAddon) {
     this._super.included.apply(this, arguments);
     var target = (parentAddon || app);

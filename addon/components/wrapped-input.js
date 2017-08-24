@@ -11,4 +11,11 @@ export default Component.extend({
     let {placeholder,labelText} = this.getProperties("placeholder","labelText");
     return isPresent(placeholder) ? placeholder : labelText;
   }),
+  actions:{
+    focusOut(){
+      if(this.attrs.onFocusOut!=undefined){
+	this.attrs.onFocusOut();
+      }
+    },
+  }
 });

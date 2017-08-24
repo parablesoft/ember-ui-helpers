@@ -10,14 +10,21 @@ export default Service.extend({
   alert: function(message,{timer,playSound} = {}){
     this.showMessage(message,"error",timer,playSound);
   },
-  confirm: function(message){
+  confirm: function(message,options={}){
     return new RSVP.Promise((resolve,reject) =>{
-      swal({
-	title: "Are you sure?",
+      let swalOptions = {
 	text: message,
 	showCancelButton: true,
+	closeOnConfirm: true,
+      };
+
+      let defaultOptions = {
+	title: "Are you sure?",
 	confirmButtonText: "Yes, I'm sure.",
-	closeOnConfirm: true},
+	cancelButtonText: "Cancel"
+      };
+      Object.assign(swalOptions,defaultOptions,options);
+      swal(swalOptions,
 	function(isConfirm){
 	  resolve(isConfirm);
 	});
