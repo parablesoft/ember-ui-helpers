@@ -2,7 +2,7 @@
 {{#if autoFocus}}
 {{textfield-auto-focus type=type value=value placeholder=placeholderText delay=autoFocusDelay  class="form-control" id=inputId maxlength=maxlength}}
 {{else}}
-{{input class="form-control" focus-out="focusOut" type=type value=value placeholder=placeholderText id=inputId maxlength=maxlength}}
+{{input class="form-control" focus-out="focusOut" min=min type=type value=value placeholder=placeholderText id=inputId maxlength=maxlength}}
 {{/if}}
 {{#if hint}}
   <span class="wrapped-input-hint">{{hint}}</span>
